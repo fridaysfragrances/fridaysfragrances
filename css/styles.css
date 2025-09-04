@@ -1,0 +1,126 @@
+/* Perfume Ingredient Analyzer Styles */
+
+/* Custom badge styling for ingredients */
+.badge-ingredient {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    padding: 0.5em 0.75em;
+}
+
+/* Ingredient item styling */
+.ingredient-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s;
+}
+
+.ingredient-item:hover {
+    background-color: rgba(240, 240, 240, 0.1);
+}
+
+/* Ingredient list container with scrolling */
+.ingredients-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.375rem;
+}
+
+/* Tooltip styling */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.ingredient-info {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+.ingredient-info:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: fixed;
+    background-color: #212529;
+    color: #f8f9fa;
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    width: 250px;
+    max-width: 80vw;
+    font-size: 0.8125rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ingredient-info:hover + .tooltip-text,
+.ingredient-info:focus + .tooltip-text,
+.tooltip-text:hover {
+    visibility: visible;
+}
+
+/* Score colors */
+.score-high {
+    color: #198754;
+}
+
+.score-medium {
+    color: #ffc107;
+}
+
+.score-low {
+    color: #dc3545;
+}
+
+/* Fix for display classes (d-none) */
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+/* Full black background and dark gray overrides */
+body {
+    background-color: #000000 !important;
+}
+
+/* Override all Bootstrap background classes to black */
+.bg-body-tertiary, .card.bg-body-tertiary, .card-body {
+    background-color: #000000 !important;
+}
+
+.card {
+    background-color: #000000 !important;
+    border-color: #333333 !important;
+}
+
+/* Override Bootstrap colors with much darker gray */
+.bg-primary, .card-header.bg-primary {
+    background-color: #1a1a1a !important;
+}
+
+.alert-info {
+    background-color: #4a4a4a !important;
+    border-color: #6a6a6a !important;
+    color: #f8f9fa !important;
+}
+
+/* Style ingredient badges */
+#ingredients-used .badge {
+    color: #000000 !important;
+    background-color: #b0b0b0 !important;
+    font-size: 1.1em !important;
+    padding: 0.6rem 1rem !important;
+    border-radius: 0.5rem !important;
+}
